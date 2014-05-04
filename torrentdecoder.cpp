@@ -52,7 +52,7 @@ void TorrentDecoder::on_decodeFileButton_clicked()
     {
         ui->textEdit->append(QString::fromStdString("\n THIS TORRENT IS A MULTI FILE"));
         ui->textEdit->append(QString::fromStdString("*********************"));
-        ui->textEdit->append(QString::fromStdString("ROOT DIR NAME: ' ")+mi.getName()+QString::fromStdString(" '"));
+        ui->textEdit->append(QString::fromStdString("ROOT DIRECTORY NAME: ' ")+mi.getName()+QString::fromStdString(" '"));
         ui->textEdit->append(QString::fromStdString("*********************"));
         ui->textEdit->append(QString::fromStdString("FILES: "));
         foreach (QString path , mi.getMultiFilePaths())
